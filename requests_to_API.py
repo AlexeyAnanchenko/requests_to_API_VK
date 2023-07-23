@@ -1,4 +1,5 @@
 import os
+import csv
 import requests
 
 
@@ -65,8 +66,22 @@ def get_reposts(cnt_posts):
     return cnt_reposts
 
 
+def write_to_csv(data):
+    """Функция для записи итогов в csv-файл"""
+
+    file_name = "Результаты.csv"
+
+    with open(file_name, mode='w', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerows(data)
+
+
 if __name__ == '__main__':
     cnt_posts = get_posts()
-    print(f'Количество подписчиков в группе 1Т Спринт: {get_members()}.')
-    print(f'Количество постов в группе 1Т Спринт: {cnt_posts}.')
-    print(f'Количество репостов в группе 1Т Спринт: {get_reposts(cnt_posts)}.')
+    data = [
+        ['Метрики по группе', 'Количество'],
+        ['Подписчиков', get_members()],
+        ['Постов', cnt_posts],
+        ['Репостов', get_reposts(cnt_posts)]
+    ]
+    write_to_csv(data)
