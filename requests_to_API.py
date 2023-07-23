@@ -69,7 +69,7 @@ def get_reposts(cnt_posts):
 def write_to_csv(data):
     """Функция для записи итогов в csv-файл"""
 
-    file_name = "Результаты.csv"
+    file_name = "results.csv"
 
     with open(file_name, mode='w', encoding='utf-8') as file:
         writer = csv.writer(file)
