@@ -17,6 +17,7 @@ params = {
 
 def get_response(method):
     """Шаблон запроса к API VK"""
+
     response = requests.get(
         f'https://api.vk.com/method/{method}',
         params=params
@@ -25,7 +26,8 @@ def get_response(method):
 
 
 def get_members():
-    """запрос для получения списка участников"""
+    """Запрос для получения списка участников"""
+
     method = 'groups.getMembers'
     params['group_id'] = GROUP_ID
     cnt_members = get_response(method)['count']
@@ -34,7 +36,8 @@ def get_members():
 
 
 def get_posts():
-    """запрос для получения количества постов в группе"""
+    """Запрос для получения количества постов в группе"""
+
     method = 'wall.get'
     params['owner_id'] = f'-{GROUP_ID}'
     cnt_posts = get_response(method)['count']
@@ -43,7 +46,8 @@ def get_posts():
 
 
 def get_reposts(cnt_posts):
-    """запрос для получения количества репостов в группе"""
+    """Запрос для получения количества репостов в группе"""
+
     method = 'wall.get'
     params['owner_id'] = f'-{GROUP_ID}'
     params['count'] = 100
