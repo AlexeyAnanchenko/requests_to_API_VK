@@ -8,10 +8,10 @@
 
 ### Результаты отработки скрипта представлены в файлах ниже:
 
-- Задания с 1 по 3: <code>[.results.csv](https://github.com/AlexeyAnanchenko/requests_to_API_VK/blob/main/results_1-3.csv)</code>.
-- Задание 4: <code>[.results.csv](https://github.com/AlexeyAnanchenko/requests_to_API_VK/blob/main/results_4.csv)</code>.
-- Задание 5: <code>[.results.csv](https://github.com/AlexeyAnanchenko/requests_to_API_VK/blob/main/results_5.csv)</code>.
-- Задание 6: <code>[.results.csv](https://github.com/AlexeyAnanchenko/requests_to_API_VK/blob/main/results_6.csv)</code>.
+- Задания с 1 по 3: <code>[./results/results_1-3.csv](https://github.com/AlexeyAnanchenko/requests_to_API_VK/blob/main/results_1-3.csv)</code>.
+- Задание 4: <code>[./results/results_4.csv](https://github.com/AlexeyAnanchenko/requests_to_API_VK/blob/main/results/results_4.csv)</code>.
+- Задание 5: <code>[./results/results_5.csv](https://github.com/AlexeyAnanchenko/requests_to_API_VK/blob/main/results/results_5.csv)</code>.
+- Задание 6: <code>[./results/results_6.csv](https://github.com/AlexeyAnanchenko/requests_to_API_VK/blob/main/results/results_6.csv)</code>.
 
 ### Условия задач:
 
