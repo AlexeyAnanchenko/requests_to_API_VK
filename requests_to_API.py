@@ -223,17 +223,17 @@ if __name__ == '__main__':
     posts = get_posts(cnt_posts)
     write_to_csv(
         data=groups_data(cnt_posts, posts),
-        file_name="results_1-3.csv"
+        file_name="results/results_1-3.csv"
     )
 
     # задание 4
     data_likes = get_posts_by_likes(copy.deepcopy(posts))
-    write_to_csv(data=data_likes, file_name="results_4.csv")
+    write_to_csv(data=data_likes, file_name="results/results_4.csv")
 
     # задание 5
     data_comments = get_posts_by_comments(copy.deepcopy(posts))
-    write_to_csv(data=data_comments, file_name="results_5.csv")
+    write_to_csv(data=data_comments, file_name="results/results_5.csv")
 
     # задание 6
     comments = get_comments(posts)
-    write_to_csv(data=comments, file_name="results_6.csv")
+    write_to_csv(data=comments, file_name="results/results_6.csv")
